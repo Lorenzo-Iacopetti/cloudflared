@@ -15,7 +15,8 @@ ARG CLOUDFLARED_VERSION="2025.11.1"
 COPY rootfs /
 
 # Run the script that installs caddy and cloudflared
-RUN ["chmod a+x /build.sh /run.sh"]
+RUN ["chmod a+x /build.sh"]
+RUN ["chmod a+x /run.sh"]
 RUN ["/build.sh"]
 
 CMD ["/run.sh"]
