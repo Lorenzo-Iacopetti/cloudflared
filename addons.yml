@@ -1,0 +1,8 @@
+---
+channel: stable
+addons:
+  cloudflared:
+    repository: Lorenzo-Iacopetti/cloudflared
+    target: cloudflared
+    image: ghcr.io/homeassistant-apps/cloudflared/{arch}
+
